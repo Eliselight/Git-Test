@@ -13,7 +13,7 @@
 using namespace std;
 
 
-int count(int n);
+int sum(int n);
 int main() {
   int number;
  
@@ -23,11 +23,11 @@ int main() {
   cin >> number;
   cout << "You chose " << number << " as your number." << endl;
   
-int total = count(number);    
+int total = sum(number);    
   cout << "The sum of numbers from 1 to " << number << " is: " << total << endl;
   return 0;
 }
-int count(int n){
+int sum(int n){
   int total = 0; 
     for (int i = 0; i <= n; i++) {
         total += i;  
